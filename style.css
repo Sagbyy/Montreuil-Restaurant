@@ -122,6 +122,7 @@ nav {
     height: 50%;
 }
 
+
 .presentation-text a {
     display: block;
     text-decoration: none;
@@ -133,6 +134,22 @@ nav {
     font-family: 'Roboto', sans-serif;
     color: #fff;
     background: rgb(13, 36, 136);
+    transition: all 0.2s ease-in-out;
+}
+
+.presentation-text a:hover {
+    background: rgb(5, 21, 94);
+}
+
+.presentation-text h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.presentation-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
 }
 
 @media screen and (max-width: 1800px) {
@@ -177,4 +194,10 @@ nav {
         height: 50px;
         line-height: 50px;
     }
+}
+
+/* Cartes */
+
+.section-cartes {
+    background: #fe7e7e;
 }
