@@ -135,7 +135,14 @@ nav {
     background: rgb(13, 36, 136);
 }
 
-@media screen and (max-width : 1920px) {
+@media screen and (max-width: 1800px) {
+    .section-presentation {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 1555px) {
+
     .presentation-text {
         border-right: rgb(221, 221, 221) 2px solid;
         border-top: 0px;
@@ -149,5 +156,25 @@ nav {
         object-fit: cover;
         height: 80%;
         border-radius: 15px 15px 0 0;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .section-presentation img {
+        background-size: cover;
+        object-fit: cover;
+        height: 50%;
+        border-radius: 15px 15px 0 0;
+    }   
+
+    .presentation-text p {
+        font-size: 16px;
+    }
+
+    .presentation-text a {
+        font-size: 14px;
+        width: 175px;
+        height: 50px;
+        line-height: 50px;
     }
 }
