@@ -25,11 +25,16 @@ nav {
     display: flex;
     justify-content: center;
     list-style: none;
+    height: 100%;
+    width: 100%;
 }
 
 .item-nav {
     margin: auto 15px;
+    display: flex;
+    align-items: center;
 }
+
 
 .item-nav a {
     text-decoration: none;
@@ -47,6 +52,23 @@ nav {
     display: none;
 }
 
+.item-nav a::after {
+    
+    content: "";
+    display: block;
+    margin: 2px auto;
+    width: 0%;
+    height: 2px;
+    background: rgb(216, 77, 77);
+    transition: width 0.2s ease-in-out;
+}
+
+.item-nav a:hover::after {
+    width: 100%;
+}
+
+
+
 .nav-img{
     position: absolute;
     height: 40px;
@@ -58,25 +80,19 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Home */
 
 .data {
     background: url(./img/rainbow-vortex\ \(1\).svg) no-repeat center / cover;
-    height: 60vh;
+    background-attachment: fixed;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
+
 
 .data img {
     width: 100px;   
@@ -91,7 +107,7 @@ nav {
     text-shadow:  0 0 2px #fff, 0 0 0px rgb(252, 252, 252);
 }
 
-#texte1{
+#texte{
     background-color: rgb(163, 47, 47);
     color: #fff;
     padding: 30px;

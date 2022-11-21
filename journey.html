@@ -17,6 +17,48 @@
     <!-- Title -->
     <title>Journey</title>
     <!-- Font -->
+    <style>
+         
+         button {
+        display: inline-block;
+        background-color: #fdfdfd;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        text-decoration: none;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      button span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: #f7c2f9;
+      }
+      button:hover span {
+        padding-right: 25px;
+      }
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -52,14 +94,12 @@
         <section id="matin">
             <div class="matin" >
                 <div id="matin-text">
+                    <h2> Matin</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illum, 
-                        eos harum dolore sit consectetur quia nulla non similique itaque, culpa eaque iure quis possimus, 
-                        esse doloremque vitae. Doloribus, minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro perspiciatis 
-                        accusamus aperiam sunt ullam? Voluptatibus obcaecati quo dicta facere tenetur cupiditate cum 
-                        corporis rem nisi. Ipsa minima fuga quae ratione.
+                        Tout d’abord, début de journée, il est 8h30 nous vous conseillons la boulangerie … 
+                        afin de prendre un croissant et un jus de fruit pour bien commencer la journée.
                     </p>
-                    <div id="voirestau">
+                    <div id="voirestaumatin">
                         <button class="button"><a href="journey.html">Voir le Restaurant</a>
                         </button>
                     </div>
@@ -70,9 +110,50 @@
                 
             </div>
         </section>
+        <!-- Midi -->
+        <section id="midi">
+            <div class="midi" >
+                <div id="midi-text">
+                    <h2> MIDI</h2>
+                    <p>
+                        Il est midi, pause déjeuner, nous allons au saveurs de montreuil, 
+                        un petit fast food à 600m de l’iut afin de manger assez rapidement pour pouvoir réviser avant la reprise des cours.
+                    </p>
+                    <div id="voirestaumidi">
+                        <button class="button2"><a href="journey.html">Voir le Restaurant</a>
+                        </button>
+                    </div>
+                </div>
+                <div id="midi-img">
+                    <img src="./img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Image of restaurant">
+                </div>
+                
+            </div>
+        </section>
+        <!-- Soirée -->
+        <section id="soir">
+            <div class="soir" >
+                <div id="soir-text">
+                    <h2> Soir</h2>
+                    <p>
+                        Et enfin, fin de journée, nous proposons aux étudiants étranger de venir manger à l’allocodrome. 
+                        Un restaurant spécialisé dans la cuisine d'Afrique de l’ouest.
+
+                    </p>
+                    <div id="voirestausoir">
+                        <button class="button3"><a href="journey.html">Voir le Restaurant</a>
+                        </button>
+                    </div>
+                </div>
+                <div id="soir-img">
+                    <img src="./img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Image of restaurant">
+                </div>
+                
+            </div>
+        </section>
 
 
     </main>
-    
+    <script src="jrn.js"></script>
 </body>
 </html>

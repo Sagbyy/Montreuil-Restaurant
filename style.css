@@ -335,3 +335,89 @@ nav {
     font-size: 18px;
     margin: 15px auto;
 }
+
+/* Tableau */
+
+.tableau h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: rgb(12, 12, 12);
+    position: relative;
+}
+
+.tableau h3 span {
+    background: rgb(255, 255, 255);
+    padding: 0 15px;
+}
+
+.tableau h3::before {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 2px;
+    position: absolute;
+    background: rgb(12, 12, 12);
+    left: 350px;
+    top: 50%;
+    margin: 0 15px;
+    z-index: -2;
+}
+
+.tableau h3::after {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 2px;
+    position: absolute;
+    background: rgb(12, 12, 12);
+    right: 350px;
+    top: 50%;
+    margin: 0 15px;
+    z-index: -2;
+}
+
+.tableau table {
+    position: relative;
+    border-radius: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin: 50px auto;
+    padding: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tableau thead tr {
+    height: 60px;
+    background: #fe7e7e;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.tableau thead tr th {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+    width: 350px;
+}
+
+.tableau table th, .tableau table td {
+    padding: 25px;
+}
+
+.tableau table tbody tr:nth-child(odd) {
+    background: #ececec;
+}
+
+.tableau table tbody tr:hover {
+    background: #e6e6e6;
+}
+
+.tableau table thead tr:hover {
+    background: #d45c5c;
+}

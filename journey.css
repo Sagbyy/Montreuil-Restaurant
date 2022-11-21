@@ -89,7 +89,7 @@ nav {
 {
     height: 100vh;
     width: 100%;
-    background-color: rgb(85, 199, 170);  
+    background-color: rgb(177, 25, 25);  
     background-attachment: fixed;
     background-size: cover;
     justify-content: space-between;
@@ -107,6 +107,15 @@ nav {
     justify-content: center;
 }
 
+#matin-text h2
+{
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+    text-shadow:  0 0 2px #fff, 0 0 0px rgb(252, 252, 252);
+    text-align: center;
+    padding: 20px 20px 20px 20px ;
+}
+
 #matin-text p
 {
     font-size: 30px;
@@ -116,7 +125,7 @@ nav {
     padding: 20px 20px 20px 20px ;
 }
 
-#voirestau
+#voirestaumatin
 {
     width:300px;
     height:200px;
@@ -128,16 +137,7 @@ nav {
     
 }
 
-.button
-{
-    text-decoration: none;
-    padding: 14px;
-    font-family: arial;
-    font-size: 1.3em;
-    color: #1d1b10;
-    background-color: #b8cce4;
-    border: 1px solid #000000;
-}
+
     
 
 #matin-img
@@ -155,3 +155,138 @@ nav {
     padding-left: 150px;
 }
 
+
+/* Midi Journey */
+.midi
+{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(206, 50, 84);  
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#midi-text
+{
+    width:60%;
+    height:650px;
+    float:right;
+    margin-top: 300px;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+#midi-text h2
+{
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+    text-shadow:  0 0 2px #fff, 0 0 0px rgb(252, 252, 252);
+    text-align: center;
+    padding: 20px 20px 20px 20px ;
+}
+
+#midi-text p
+{
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    text-shadow:  0 0 2px #fff, 0 0 0px rgb(252, 252, 252);
+    text-align: justify;
+    padding: 20px 20px 20px 20px ;
+}
+
+#midi-img
+{
+    width:40%;
+    height:350px;
+    float:left;
+    margin-top: 250px;
+}
+
+#midi #midi-img img
+{
+    width : 650px;
+    height : 500px;
+    padding-left: 150px;
+}
+
+#voirestaumidi
+{
+    width:300px;
+    height:200px;
+    float:left;
+    margin: 20px 400px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+/* Soir Journey */
+.soir
+{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(253, 255, 255);  
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#soir-text
+{
+    width:60%;
+    height:650px;
+    float:left;
+    margin-top: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+#soir-text h2
+{
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+    text-shadow:  0 0 2px #fff, 0 0 0px rgb(252, 252, 252);
+    text-align: center;
+    padding: 20px 20px 20px 20px ;
+}
+
+#soir-text p
+{
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    text-shadow:  0 0 2px #fff, 0 0 0px rgb(252, 252, 252);
+    text-align: justify;
+    padding: 20px 20px 20px 20px ;
+}
+
+#soir-img
+{
+    width:40%;
+    height:350px;
+    float:left;
+    margin-top: 250px;
+}
+
+#soir #soir-img img
+{
+    width : 650px;
+    height : 500px;
+    padding-left: 150px;
+}
+
+#voirestausoir
+{
+    width:300px;
+    height:200px;
+    float:left;
+    margin: 20px 400px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
