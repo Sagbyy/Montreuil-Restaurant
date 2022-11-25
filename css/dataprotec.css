@@ -82,8 +82,14 @@ nav {
 
 /* Home */
 
+body {
+    background: url(../img/rainbow-vortex.svg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 5000px;
+}
+
 .data {
-    background: url(./img/rainbow-vortex\ \(1\).svg) no-repeat center / cover;
+    
     background-attachment: fixed;
     height: 100vh;
     display: flex;

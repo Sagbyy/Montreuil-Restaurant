@@ -114,7 +114,7 @@ nav {
 /* Home */
 
 .home {
-    background: url(./img/dragon-scales\(1\).svg) repeat center/cover;
+    background: url(../img/dragon-scales\(1\).svg) repeat center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
