@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Russo+One&display=swap" rel="stylesheet">
-
+<html lang="fr">
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -12,11 +8,13 @@
     <!-- Links -->
     <link rel="shortcut icon" href="../img/ice-cream-solid.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
     <!-- Title -->
     <title>Restaurant de Montreuil</title>
     <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
@@ -43,8 +41,21 @@
             <a href="index.html">
                 <img class="nav-img" src="../img/ice-cream-solid.svg" alt="Logo restaurant">
             </a>
+        </nav>
             
     </header>
+
+    <!-- Button Ancre -->
+    <div class="button-page">
+        <div class="button-up button-scroll" title="Flèche vers le haut">
+            <i class="fa-solid fa-arrow-up button-icone"></i>
+        </div>
+
+        <div class="button-down button-scroll" title="Flèche vers le bas">
+            <i class="fa-solid fa-arrow-down button-icone"></i>
+        </div>
+    </div>
+
 
     <!-- Home -->
     <main>
@@ -59,7 +70,7 @@
         <!-- Presentation -->
         <section id="presentation">
             <div class="section-presentation">
-                <img src="../img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Image of restaurant">
+                <img src="../img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Image of restaurant" title="Photo de pizza">
                 <div class="presentation-text">
                     <h2>Presentation</h2>
                     <p>Welcome to the restaurant website of the IUT of Montreuil ! 
@@ -80,19 +91,19 @@
             <div class="container-cartes">
                 <div class="cartes">
                     <h4>Title</h4>
-                    <i class="fa-solid fa-burger"></i>
+                    <i class="fa-solid fa-burger" title="Image de burger"></i>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dignissimos porro laborum provident nulla placeat sit, illum aliquam fugit adipisci quisquam vitae architecto tempora, consequuntur ea et esse repudiandae? Esse!</p>
                 </div>
                 
                 <div class="cartes">
                     <h4>Title</h4>
-                    <i class="fa-solid fa-burger"></i>
+                    <i class="fa-solid fa-burger" title="Image de burger"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, expedita incidunt repudiandae repellat mollitia non voluptate minus fugit itaque similique officia delectus nihil soluta dignissimos unde officiis ipsa nesciunt architecto?</p>
                 </div>
 
                 <div class="cartes">
                     <h4>Title</h4>
-                    <i class="fa-solid fa-burger"></i>
+                    <i class="fa-solid fa-burger" title="Image de burger"></i>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint eius quos, ipsa consequuntur culpa aspernatur nostrum maiores vel magnam architecto quod doloribus blanditiis beatae deleniti sequi temporibus fugit libero. Qui.</p>
                 </div>
             </div>
@@ -100,48 +111,75 @@
 
         <section id="table" class="tableau">
             <h3><span>Tableau</span></h3>
-            <table>
-                <thead>
-                    <tr>    
-                        <th>Ayoub</th>
-                        <th>Anja</th>
-                        <th>Youssef</th>
-                        <th>Salah</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                    </tr>
-
-                    <tr>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                    </tr>
-
-                    <tr>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                    </tr>
-
-                    <tr>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                    </tr>
-                </tbody>
-            </table>
-
+            <div class="container-tableau">
+                <table>
+                    <thead>
+                        <tr>    
+                            <th>Ayoub</th>
+                            <th>Anja</th>
+                            <th>Youssef</th>
+                            <th>Salah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mise en place du "parcours type" pour se restaurer à Montreuil</td>
+                            <td>Rédaction vidéo</td>
+                            <td>DROITS À L’IMAGE</td>
+                            <td>Ajouter toute les personnes sur le projet</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Recherche de l'idée pour la présentation du site</td>
+                            <td>Tourner la video de présentation</td>
+                            <td>RGPD</td>
+                            <td>Prendre RDV avec un client</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Créer un parcours type pour une journée</td>
+                            <td>Montage vidéo</td>
+                            <td>PROPRIÉTÉ INTELLECTUELLE</td>
+                            <td>Interrogation du client pour obtenir des précisions</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Chercher tout les restaurant Halal</td>
+                            <td>Continuer les recherches sur les restaurants de Montreuil</td>
+                            <td>SANCTIONS</td>
+                            <td>Ajouter tout les clients dans le Trello</td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+            
         </section>
+
+        <section id="conception" class="conception">
+            <div class="conception-title">
+                <h3 class="main-title">Étapes de conception
+                <span class="second-title">Étapes de conception</span>
+                </h3>
+            </div>
+
+
+            <p class="txt-conception">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis quisquam quidem molestiae ea, hic quasi alias in libero, eos fuga, quia nisi omnis vitae debitis reiciendis tempore sequi aliquam.
+                Nemo ullam magnam iusto veritatis, aspernatur fugit praesentium ex odio unde culpa eos eveniet consectetur quam dolorem pariatur vero quisquam facilis aperiam. Nostrum laboriosam ea neque ipsam, repellendus optio? Laborum.
+                A assumenda magni asperiores quo minima itaque molestias ipsum id ab, praesentium eaque dolorum laborum, enim ut magnam fuga quis? Vero eos soluta omnis modi sit voluptate ducimus sapiente adipisci?
+                Voluptas nemo veritatis vero laborum cumque qui consectetur temporibus! Dicta ullam cum atque maxime, voluptates cumque provident fuga voluptate aliquid esse consequatur repellat voluptatum eligendi veritatis error nam sapiente. Laboriosam.
+                Voluptate, voluptates. Ipsum quia aspernatur culpa dolor labore deserunt iusto, rem velit recusandae, asperiores eveniet! Deserunt molestias rerum id, quos, ipsum necessitatibus iure cum qui sapiente nulla odio excepturi vero?
+            </p>
+        </section>
+
+
+        <!-- Étape de conception -->
     </main>
+
+    <footer>
+        <p class="name">BOUHDJEUR Salahe-eddine, FIVEL Andreas, LABIB Ayoub, EL HOUSNY Yuussef</p>
+        <p>C2 - 26/11/2022</p>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/769a8ed7dd.js" crossorigin="anonymous"></script>

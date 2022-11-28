@@ -110,6 +110,48 @@ nav {
     }
 }
 
+/*-------------- Button  -----------------*/
+
+
+.button-scroll {
+    height: 75px;
+    width: 75px;
+    background: #f1f1f1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.445);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 150;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-scroll:hover .button-icone{
+    color: #fff;
+}
+
+.button-scroll:hover {
+    background: #d45c5c;
+}
+
+
+.button-up {
+    bottom: 115px;
+}
+
+.button-down {
+    bottom: 20px;
+}
+
+.button-icone {
+    font-size: 40px;
+    color: #d45c5c;
+    transition: all 0.2s ease-in-out;
+}
+
 
 /* Home */
 
@@ -133,6 +175,12 @@ nav {
     margin: 60px auto;
     font-family: 'Righteous', cursive;
     text-shadow:  0 0 2px #fff, 0 0 0px rgb(252, 252, 252);
+}
+
+@media screen and (max-width: 500px) {
+    .home h1 {
+        font-size: 40px;
+    }    
 }
 
 /* Presentation */
@@ -283,10 +331,10 @@ nav {
     transform: translateY(15px);
     text-align: center;
     color: #fff;
-    font-size: 45px;
+    font-size: clamp(35px, 4vw, 45px);
     margin: 25px auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 1100;
+    font-weight: 1000;
 }
 
 .section-cartes hr {
@@ -304,6 +352,10 @@ nav {
 }
 
 .cartes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 450px;
     height: auto;
     background: #ffffff;
@@ -320,7 +372,6 @@ nav {
 .cartes i {
     color: #fe7e7e;
     font-size: 60px;
-    margin: auto 180px;
 }
 
 .cartes h4 {
@@ -345,6 +396,7 @@ nav {
     text-transform: uppercase;
     color: rgb(12, 12, 12);
     position: relative;
+    overflow: hidden;
 }
 
 .tableau h3 span {
@@ -363,6 +415,7 @@ nav {
     top: 50%;
     margin: 0 15px;
     z-index: -2;
+
 }
 
 .tableau h3::after {
@@ -378,6 +431,12 @@ nav {
     z-index: -2;
 }
 
+.container-tableau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tableau table {
     position: relative;
     border-radius: 12px;
@@ -385,7 +444,7 @@ nav {
     border-spacing: 0;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    margin: 50px auto;
+    margin: 50px 20px;
     padding: 50px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -420,4 +479,77 @@ nav {
 
 .tableau table thead tr:hover {
     background: #d45c5c;
+}
+
+@media screen and (max-width: 500px) {
+    .tableau thead tr th{
+        font-size: 15px;
+    }
+
+    .tableau table {
+        font-size: 15px;
+    }
+}
+
+/*--------------- ETAPE DE CONCEPTION -----------------*/
+
+
+.conception-title {
+    margin: 40px auto;
+}
+
+.conception .main-title {
+    text-align: center;
+    font-size: clamp(10px, 4vw, 60px);
+    font-family: 'Open Sans', sans-serif;position: relative;
+    text-transform: uppercase;
+    color: rgb(12, 12, 12);
+    position: relative;
+}
+
+.conception .second-title {
+    font-family: serif;
+    text-align: center;
+    font-size: clamp(20px, 6vw, 100px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.274);
+    white-space: nowrap;
+}
+
+.conception {
+    font-size: 10px;
+}
+
+.conception p {
+    font-size: 1.7em;
+    margin: 10px 45px;
+    font-family: 'Open sans', sans-serif;
+}
+
+
+
+/*--------------- FOOTER ---------------*/
+
+footer {
+    background: #d45c5c;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: clamp(5px, 3vw, 15px);
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+    margin: 5px 20px;
 }
