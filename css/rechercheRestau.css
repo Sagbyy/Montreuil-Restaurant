@@ -1,67 +1,228 @@
-/*
-{
- background-image: url("sun-tornado.png");
-}
-*/
-
-
 /* Reset CSS */
-
 *, ::after, ::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* Navigation */
-
 nav {
     position: fixed;
     width: 100%;
     height: 70px;
-    line-height: 70px;
     background: linear-gradient(rgba(24, 24, 24, 0.26), rgba(255, 255, 255, 0));
 }
-
 .liste-nav {
     display: flex;
     justify-content: center;
     list-style: none;
+    height: 100%;
+    width: 100%;
 }
 
 .item-nav {
     margin: auto 15px;
+    display: flex;
+    align-items: center;
 }
-
 .item-nav a {
     text-decoration: none;
     color: #fff;
     font-size: 25px;
     font-family: 'Righteous', cursive;
 }
-
-.liste-nav i {
+.item-nav a::after {
+    content: "";
+    display: block;
+    margin: 2px auto;
+    width: 0%;
+    height: 2px;
+    background: #f1f1f1;
+    transition: width 0.2s ease-in-out;
+}
+.item-nav a:hover::after {
+    width: 100%;
+}
+.logo-menu {
     position: absolute;
     color: #fff;
     top: 12px;
     left: 10px;
     font-size: 45px;
     display: none;
+    cursor: pointer;
 }
-
 .nav-img{
     position: absolute;
     height: 40px;
-    top: 15px;
+    top: 18px;
     right: 20px;
     filter: invert(100%);
-    
+   
+}
+@media screen and (max-width: 700px) {
+    .logo-menu {
+        display: block;
+    }
+    .liste-nav{
+        padding-top: 70px;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        display: none;
+    }
+    .liste-nav.active {
+        display: block;
+        background: #d45c5c;
+    }
+    .item-nav {
+        height: 70px;
+        justify-content: center;
+        font-size: 10px;
+    }
+    .nav-img {
+        top: 28px;
+    }
+    nav {
+        background: #d45c5c;
+        height: 90px;
+        z-index: 150;
+    }
+    .search{
+        background-color: #b0d45c ! important ;
+    }
 }
 
-main {
+/* Home */
+.home {
+    background: url(../img/rainbow-vortex4.svg) repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home img {
+    width: 180px;  
+}
+
+.home h1 {
+    font-size: 45px;
+    color: #fff;
+    margin: 60px auto;
+    font-family: 'Righteous', cursive;
+    text-shadow:  0 0 2px #fff, 0 0 0px rgb(252, 252, 252);
+}
+
+
+/* bloc */
+.section-cartes {
+    margin: 50px auto;
+    display: block;
+    background: url(../img/rainbow-vortex4.svg) repeat center/cover;
+}
+
+.section-cartes h3 {
+    transform: translateY(15px);
     text-align: center;
+    color: rgb(26, 31, 85);
+    font-size: 45px;
+    margin: 25px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1100;
+   
 }
-  
+.section-cartes hr {
+    color: #fff;
+    border: none;
+    border: 1px solid #fff;
+    width: 250px;
+    margin: 15px auto;
+}
+.container-cartes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cartes {
+    width: 450px;
+    height: auto;
+    background: #ffffff;
+    margin: 25px 10px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    justify-content: space-around;
+    background-color :rgba(252, 252, 252, 0.596);
+    border-radius: 50px;
+}
+.cartes:hover {
+    transform: translateY(-40px);
+   
+}
+
+.cartes h4 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px auto;
+}
 
 
+/* barre de recherche */
+#searchbartop {
+    position:absolute;
+    top:972px; right:850px;
+  }
+  #searchbartop #searchbartopbtn {
+    position:absolute;
+    left: -9999px;
+  }
+  #searchbartop #searchbartopbtn + label {
+    display:inline-block;
+    cursor:pointer;
+    height:24px;
+    line-height:24px;
+    text-align:center;
+    background:rgba(173, 42, 33, 0.685);
+  }
+  #searchbartop #searchbartopbtn:checked + label {
+    background:#ddd; color:rgb(170, 170, 170);
+  }
+  #searchbartop form {
+    position:absolute;
+    top:0; right:0px;
+    display:none;
+  }
+  #searchbartop form > button, #searchbartop form > div {
+    display:table-cell;
+    height:28px;
+  }
+  #searchbartop #searchbartopbtn:checked ~ form {
+    display:table;
+  }
+  #searchbartop form > div > input {
+    width:0;
+  }
+  #searchbartop #searchbartopbtn:checked ~ form > div > input {
+    animation: expand 0.8s ease-in-out 1;
+      animation-fill-mode: forwards;
+  }
+  @keyframes expand {
+    from { width:0; }
+    to   { width:150px; }
+  }
+ 
+h4{
+    text-align: center;
+}  
+
+
+
+.search{
+    background-color: rgba(252, 252, 252, 0.596);;
+}

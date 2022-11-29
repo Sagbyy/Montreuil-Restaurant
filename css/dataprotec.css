@@ -1,3 +1,4 @@
+
 /* Reset CSS */
 
 *, ::after, ::before {
@@ -17,7 +18,6 @@ nav {
     position: fixed;
     width: 100%;
     height: 70px;
-    line-height: 70px;
     background: linear-gradient(rgba(24, 24, 24, 0.26), rgba(255, 255, 255, 0));
 }
 
@@ -29,12 +29,12 @@ nav {
     width: 100%;
 }
 
+
 .item-nav {
     margin: auto 15px;
     display: flex;
     align-items: center;
 }
-
 
 .item-nav a {
     text-decoration: none;
@@ -43,23 +43,13 @@ nav {
     font-family: 'Righteous', cursive;
 }
 
-.liste-nav i {
-    position: absolute;
-    color: #fff;
-    top: 12px;
-    left: 10px;
-    font-size: 45px;
-    display: none;
-}
-
 .item-nav a::after {
-    
     content: "";
     display: block;
     margin: 2px auto;
     width: 0%;
     height: 2px;
-    background: rgb(216, 77, 77);
+    background: #f1f1f1;
     transition: width 0.2s ease-in-out;
 }
 
@@ -67,16 +57,103 @@ nav {
     width: 100%;
 }
 
-
+.logo-menu {
+    position: absolute;
+    color: #fff;
+    top: 12px;
+    left: 10px;
+    font-size: 45px;
+    display: none;
+    cursor: pointer;
+}
 
 .nav-img{
     position: absolute;
     height: 40px;
-    top: 15px;
+    top: 18px;
     right: 20px;
     filter: invert(100%);
     
 }
+
+@media screen and (max-width: 700px) {
+    .logo-menu {
+        display: block;
+    }
+
+    .liste-nav{
+        padding-top: 70px;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        display: none;
+    }
+
+    .liste-nav.active {
+        display: block;
+        background: #d45c5c;
+    }
+
+    .item-nav {
+        height: 70px;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    .nav-img {
+        top: 28px;
+    }
+
+    nav {
+        background: #d45c5c;
+        height: 90px;
+        z-index: 150;
+    }
+}
+
+
+/*-------------- Button  -----------------*/
+
+
+.button-scroll {
+    height: 75px;
+    width: 75px;
+    background: #f1f1f1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.445);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 150;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-scroll:hover .button-icone{
+    color: #fff;
+}
+
+.button-scroll:hover {
+    background: #d45c5c;
+}
+
+
+.button-up {
+    bottom: 115px;
+}
+
+.button-down {
+    bottom: 20px;
+}
+
+.button-icone {
+    font-size: 40px;
+    color: #d45c5c;
+    transition: all 0.2s ease-in-out;
+}
+
 
 
 
@@ -85,7 +162,11 @@ nav {
 body {
     background: url(../img/rainbow-vortex.svg) no-repeat center/cover;
     background-attachment: fixed;
-    height: 5000px;
+    
+}
+
+main{
+    opacity: 75%;
 }
 
 .data {
@@ -111,20 +192,38 @@ body {
     margin: 60px auto;
     font-family: 'Righteous', cursive;
     text-shadow:  0 0 2px #fff, 0 0 0px rgb(252, 252, 252);
+    
 }
 
-#texte{
-    background-color: rgb(163, 47, 47);
-    color: #fff;
+#t{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 30px;
-    display: flex;
+    border-radius: 15px;
+    margin: 2%;
+    line-height: 25px;
     
+}
+
+
+#t1{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+       
+    border-radius: 15px; 
+    margin: 2%;
+    line-height: 25px;
 }
 
 #gauche{
-    width: 40%;
-    display: inline-block;
     
+    width: 45%;
+    display: inline-block;
     padding: 1rem 1rem;
     vertical-align: middle;
     text-align: center;
@@ -132,15 +231,16 @@ body {
 }
 
 #gauche h1{
-    line-height: 150px;
+    line-height: auto;
 }
 
 #droite{
-    width: 60%;
+    width: 45%;
     display: inline-block;
-  
-  padding: 1rem 1rem;
-  vertical-align: middle;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    
+    
 }
 
 
