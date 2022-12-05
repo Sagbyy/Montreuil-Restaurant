@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Russo+One&display=swap" rel="stylesheet">
+
 
 
 
@@ -12,53 +10,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links -->
-    <link rel="shortcut icon" href="./img/ice-cream-solid.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/ice-cream-solid.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/journey.css">
     <!-- Title -->
-    <title>Journey</title>
+    <title>Parcours type - Restaurant de Montreuil</title>
     <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Russo+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <header>
         <nav>
             <ul class="liste-nav">
                 <li class="item-nav">
-                    <a href="index.html">Home</a>
+                    <a href="../index.html">Accueil</a>
                 </li>
                 <li class="item-nav">
-                    <a href="journey.html">Journey</a>
+                    <a href="../html/journey.html">Parcours</a>
                 </li>
                 <li class="item-nav">
-                    <a href="dataprotect.html">Data protection</a>
+                    <a href="../html/dataprotect.html">Protection des données</a>
                 </li>
-                <i class="fa-solid fa-bars"></i>
+                <li class="item-nav">
+                    <a href="../html/rechercheRestau.html">Liste des restaurants</a>
+                </li>
             </ul>
-            <a href="index.html">
-                <img class="nav-img" src="../img/ice-cream-solid.svg" alt="Logo restaurant">
+            <div class="logo-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <a href="../index.html">
+                <img class="nav-img" src="../img/ice-cream-solid.svg" alt="Logo restaurant" title="Logo Ice Cream">
             </a>
+        </nav>
             
     </header>
+
+    <!-- Button Ancre -->
+    <div class="button-page">
+        <div class="button-up button-scroll" title="Flèche vers le haut">
+            <i class="fa-solid fa-arrow-up button-icone"></i>
+        </div>
+
+        <div class="button-down button-scroll" title="Flèche vers le bas">
+            <i class="fa-solid fa-arrow-down button-icone"></i>
+        </div>
+    </div>
 
     <!-- Home -->
     <main>
         <section id="home">
             <div class="home">
-                <img class="main-logo" src="../img/logo_montreuil.png" alt="Logo iut de montreuil">
-                <h1>Journey type</h1>
+                <a href="https://www.iut.univ-paris8.fr/" target="_blank">
+                    <img class="main-logo" src="../img/logo_montreuil.png" alt="Logo iut de montreuil" title="Logo de l'IUT de Montreuil">
+                </a>
+                <h1>Parcours type</h1>
             </div>
         </section>
         <!-- Matin -->
         <section id="matin">
             <div class="matin" >
                 <div id="matin-text">
-                    <h2> Matin</h2>
+                    <h2>Matinée</h2>
                     <p>
                         Tout d’abord, début de journée, il est 8h30 nous vous conseillons la boulangerie … 
                         afin de prendre un croissant et un jus de fruit pour bien commencer la journée.
                     </p>
+                    <!-- Bouton restaurant -->
                     <div id="voirestaumatin">
-                        <button class="button"><a href="journey.html">Voir le Restaurant</a>
+                        <button class="button" onclick="window.location.href = '../html/journey.html';">Voir le Restaurant
                         </button>
                     </div>
                 </div>
@@ -77,13 +99,14 @@
                         Il est midi, pause déjeuner, nous allons au saveurs de montreuil, 
                         un petit fast food à 600m de l’iut afin de manger assez rapidement pour pouvoir réviser avant la reprise des cours.
                     </p>
+                    <!-- Bouton restaurant -->
                     <div id="voirestaumidi">
-                        <button class="button2"><a href="journey.html">Voir le Restaurant</a>
+                        <button class="button2" onclick="window.location.href = '../html/journey.html';">Voir le Restaurant
                         </button>
                     </div>
                 </div>
                 <div id="midi-img">
-                    <img src="../img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Image of restaurant">
+                    <img src="../img/burger.jpg" alt="Image of restaurant">
                 </div>
                 
             </div>
@@ -92,19 +115,19 @@
         <section id="soir">
             <div class="soir" >
                 <div id="soir-text">
-                    <h2> Soir</h2>
+                    <h2> Soirée </h2>
                     <p>
                         Et enfin, fin de journée, nous proposons aux étudiants étranger de venir manger à l’allocodrome. 
                         Un restaurant spécialisé dans la cuisine d'Afrique de l’ouest.
-
                     </p>
+                    <!-- Bouton restaurant -->
                     <div id="voirestausoir">
-                        <button class="button3"><a href="journey.html">Voir le Restaurant</a>
+                        <button class="button" onclick="window.location.href = '../html/journey.html';">Voir le Restaurant
                         </button>
                     </div>
                 </div>
                 <div id="soir-img">
-                    <img src="../img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Image of restaurant">
+                    <img src="../img/africanfood.jpg" alt="Image of restaurant">
                 </div>
                 
             </div>
@@ -112,5 +135,16 @@
 
 
     </main>
+
+    
+       <!-- Footer  -->
+
+    <footer>
+        <p class="name">BOUHDJEUR Salahe-eddine, FIVEL Andreas, LABIB Ayoub, EL HOUSNY Yuussef</p>
+        <p>C2 - 26/11/2022</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/769a8ed7dd.js" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

@@ -557,7 +557,7 @@ nav {
 
 .conception .main-title {
     text-align: center;
-    font-size: clamp(10px, 4vw, 60px);
+    font-size: clamp(30px, 4vw, 60px);
     font-family: 'Open Sans', sans-serif;position: relative;
     text-transform: uppercase;
     color: rgb(12, 12, 12);
@@ -567,7 +567,7 @@ nav {
 .conception .second-title {
     font-family: serif;
     text-align: center;
-    font-size: clamp(20px, 6vw, 100px);
+    font-size: clamp(50px, 6vw, 100px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -588,6 +588,41 @@ nav {
     font-family: 'Open sans', sans-serif;
 }
 
+
+
+/*------------ Audio ------------- */
+
+
+.audio-title {
+    margin: 40px auto;
+}
+
+.section-audio .main-title {
+    text-align: center;
+    font-size: clamp(40px, 4vw, 60px);
+    font-family: 'Open Sans', sans-serif;position: relative;
+    text-transform: uppercase;
+    color: rgb(12, 12, 12);
+    position: relative;
+}
+
+.section-audio .second-title {
+    font-family: serif;
+    text-align: center;
+    font-size: clamp(70px, 6vw, 100px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.274);
+    white-space: nowrap;
+}
+
+.section-audio {
+    text-align: center;
+}
 
 
 /*--------------- FOOTER ---------------*/
