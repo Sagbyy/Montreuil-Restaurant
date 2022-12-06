@@ -194,7 +194,7 @@ main{
     
 }
 
-#t{
+.t{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(255, 255, 255);
@@ -207,7 +207,7 @@ main{
 }
 
 
-#t1{
+.t1{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(255, 255, 255);
@@ -219,8 +219,7 @@ main{
     line-height: 25px;
 }
 
-#gauche{
-    
+.gauche{
     width: 45%;
     display: inline-block;
     padding: 1rem 1rem;
@@ -229,11 +228,7 @@ main{
 
 }
 
-#gauche h1{
-    line-height: auto;
-}
-
-#droite{
+.droite{
     width: 45%;
     display: inline-block;
     padding: 1rem 1rem;
@@ -243,7 +238,7 @@ main{
 }
 
 @media screen and (max-width: 1050px) {
-    #t1 {
+    .t1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -251,14 +246,14 @@ main{
     }
 
 
-    #t1, 
-    #gauche, 
-    #droite {
+    .t1, 
+    .gauche, 
+    .droite {
         padding: 20px;
     }
 
-    #droite,
-    #gauche {
+    .droite,
+    .gauche {
         width: 100%;
     }
 }
@@ -269,6 +264,28 @@ main{
     }    
 }
 
+/*------------- W3C Section --------------*/
+
+.section-w3c h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #f1f1f1;
+    border-radius: 15px;
+    margin: 24px auto;    
+}
+
+.section-w3c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto 30px;
+}
+
+.section-w3c .w3c-image {
+    width: 97vw;
+}
 
 /*--------------- FOOTER ---------------*/
 
