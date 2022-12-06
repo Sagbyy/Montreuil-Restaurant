@@ -165,7 +165,7 @@ body {
 }
 
 main{
-    opacity: 75%;
+    opacity: 50%;
 }
 
 
@@ -236,6 +236,10 @@ main{
     vertical-align: middle;
     
     
+}
+
+.text {
+    font-style: italic;
 }
 
 @media screen and (max-width: 1050px) {
