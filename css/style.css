@@ -624,6 +624,10 @@ nav {
     text-align: center;
 }
 
+.section-audio audio {
+    width: 50%;
+}
+
 
 /*--------------- FOOTER ---------------*/
 
